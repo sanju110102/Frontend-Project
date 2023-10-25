@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertaking - College Nexus</title>
+    <style>
+        /* Background color gradient */
+        body {
+            background: linear-gradient(to right, #3F7AD3, #5A9BEA);
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+
+        /* Styling for undertaking content */
+        .undertaking-container {
+            background-color: #E6F0FF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .undertaking-heading {
+            font-weight: 700;
+            font-size: 32px;
+            color: #3F7AD3;
+        }
+
+        .undertaking-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .agree-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .agree-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3F7AD3;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3066A9;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="undertaking-container">
+            <h1 class="undertaking-heading">UNDERTAKING</h1>
+            <p>
+                I, [Student Name], enrolled under [PRN/Registration Number], hereby undertake that all the information provided by me is accurate and up-to-date. Any misinformation may lead to disciplinary actions as per college regulations. I have thoroughly checked and verified all my details and ensure its authenticity.
+            </p>
+            <p>
+                I also understand and agree to abide by all the rules and regulations of the college and will follow the academic and ethical standards expected of a student.
+            </p>
+            <p>
+                I pledge to maintain academic integrity and not engage in any form of plagiarism or cheating during my academic journey in this institution.
+            </p>
+            <div class="agree-section">
+                <input type="checkbox" id="agreeCheck" name="agree" required>
+                <label for="agreeCheck">I agree to the above undertaking.</label>
+            </div>
+            <div class="submit-section">
+                <form method="POST" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <!-- Form fields go here -->
+                    <button type="submit">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

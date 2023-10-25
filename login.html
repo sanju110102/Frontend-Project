@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background-color: #5A9BEA; color: #fff; font-family: Arial, sans-serif;">
+    <div class="logo-container" style="text-align: center; margin-top: 20px;">
+      <div class="logo">
+        <img src="https://c.animaapp.com/oixjahaG/img/nexus-removebg-preview-1@2x.png" alt="Logo" style="max-width: 200px; height: auto;">
+      </div>
+      <p class="tagline" style="font-size: 16px; margin-top: 10px;">Your Ultimate Destination for Student-Career Connections</p>
+    </div>
+
+    <div class="right-container" style="text-align: center; margin-top: 20px;">
+      <div class="user-selection">
+        <button id="student-button" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Student</button>
+        <button id="tnp-admin-button" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">TnP Admin</button>
+        <button id="faculty-coordinator-button" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Faculty Coordinator</button>
+      </div>
+      <form>
+        <div class="form-group" style="margin-bottom: 10px;">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" style="width: 100%; padding: 10px; border: 1px solid #fff; background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 14px;">
+        </div>
+        <div class="form-group" style="margin-bottom: 10px;">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" style="width: 100%; padding: 10px; border: 1px solid #fff; background-color: rgba(255, 255, 255, 0.1); color: #fff; font-size: 14px;">
+        </div>
+        <div class="login-button">
+          <button id="login-button" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Login</button>
+        </div>
+      </form>
+      <div class="register-text" style="color: #fff; font-size: 16px;">Don't have credentials, register now</div>
+      <button id="register-button" type="button" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Register</button>
+    </div>
+  </body>
+</html>

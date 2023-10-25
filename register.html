@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Background color gradient */
+        body {
+            background: linear-gradient(45deg, #3F7AD3, #3F7AD39c);
+            color: #fff;
+            padding-top: 2rem;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 0.5rem 0;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        input::placeholder, select {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus, select:focus {
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+        }
+
+        button {
+            display: block;
+            margin: 1rem auto 0 auto;
+            padding: 10px 15px;
+            background-color: rgba(230, 230, 230, 0.9);
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION</h1>
+
+    <form id="registrationForm" style="background: rgba(0, 0, 0, 0.6); padding: 2rem; border-radius: 15px; width: 80%; max-width: 800px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); margin: 0 auto;" action="login.html" method="POST">
+        <input type="text" placeholder="Name" name="Name" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="PRN" name="PRN" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="date" name="DOB" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+         <select name="GENDER" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="email" placeholder="Email" name="EMAIL" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Age" name="AGE" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Application ID" name="Application_ID" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Mobile Number" name="MOBILE_No." required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Alternate Mobile Number" name="ALTERNATE_MOBILE_NO." required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Local Address" name="LOCAL_ADDRESS" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Permanent Address" name="PERMANENT_ADDRESS" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Native Place" name="NATIVE_PLACE" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="10th Percentage" name="X_PERCENTAGE" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="10th Year of Passing" name="X_YEAR_OF_PASSING" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="10th Board" name="X_BOARD" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="12th Percentage" name="XII_PERCENTAGE" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="12th Year of Passing" name="XII_YEAR_OF_PASSING" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="12th Board" name="XII_BOARD" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Diploma Percentage" name="DIPLOMA_PERCENTAGE" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Diploma Year of Passing" name="Diploma_year_of_passing" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Diploma College" name="Diploma_college" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Diploma Branch" name="Diploma_branch" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Admission Type" name="Admission_Type" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Engineering Year of Passing" name="Engg_year_of_passing" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 1 SGPA" name="SEM_1_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 2 SGPA" name="SEM_2_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 3 SGPA" name "SEM_3_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 4 SGPA" name="SEM_4_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 5 SGPA" name="SEM_5_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 6 SGPA" name="SEM_6_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 7 SGPA" name="SEM_7_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="SEM 8 SGPA" name="SEM_8_sgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Average CGPA Till SEM" name="AVG_TILL_SEM_cgpa" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Average Percentage Till SEM" name="AVG_TILL_SEM_percentage" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="number" placeholder="Live Backlogs" name="Live_backlogs" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Dead Backlogs" name="Dead_backlogs" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Year Gap" name="Year_gap" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Co-Curricular" name="Co_Curricular" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Extra-Curricular" name="Extra_Curricular" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Mini Project" name="Mini_project" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Major Project" name="Maj_project" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Programming Languages Known" name="Prog_lang_known" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Preference 1" name="Preference_1" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Preference 2" name="Preference_2" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Preference 3" name="Preference_3" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;">
+        <input type="text" placeholder="Placement Status" name="Placement_status" required style="width: 100%; padding: 10px; margin: 0.5rem 0; border: none; background: rgba(255, 255, 255, 0.1); border-radius: 5px; color: #fff; transition: background-color 0.3s ease;"> {% endcomment %}
+        <button type="submit" style="display: block; margin: 1rem auto 0 auto; padding: 10px 15px; background-color: rgba(230, 230, 230, 0.9); color: #333; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease;">Registerr</button>
+    </form>
+</body>
+</html>
